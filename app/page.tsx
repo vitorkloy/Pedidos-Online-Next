@@ -24,7 +24,7 @@ export default function HomePage() {
   } = useCart();
 
   const currentYear = new Date().getFullYear();
-  const companyName = "D'CASA Marmitaria";
+  const companyName = "Nosso Cardápio"; /* subistituir pelo nome do restaurante */
   const copyrightText = `© ${currentYear} ${companyName}. Todos os direitos reservados.`;
 
   return (

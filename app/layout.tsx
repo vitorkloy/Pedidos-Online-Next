@@ -15,8 +15,8 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "D'CASA Marmitaria - Pedidos Online",
-  description: "Sistema de pedidos online para marmitaria",
+  title: "Nosso Cardápio - Pedidos Online", /* subistituir pelo nome do restaurante */ 
+  description: "Sistema de pedidos online para o restaurante", /* subistituir pela descrição do restaurante */
 };
 
 export default function RootLayout({

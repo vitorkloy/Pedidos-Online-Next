@@ -16,17 +16,17 @@ export function Header({ cartItemCount, onCartClick }: HeaderProps) {
           <div className="w-10 h-10 rounded-xl bg-primary flex items-center justify-center shadow-glow transition-transform group-hover:scale-105">
             <Utensils className="w-5 h-5 text-primary-foreground" />
           </div>
-          <div>
+          <div> 
             <h1 className="font-display text-xl font-bold text-foreground">
-              D'CASA
-            </h1>
-            <p className="text-xs text-muted-foreground">Marmitaria</p>
+              Nosso Cardápio
+            </h1> {/* subistituir pelo nome do restaurante */}
+            <p className="text-xs text-muted-foreground">Cardápio Online</p>
           </div>
         </Link>
 
         <div className="flex items-center gap-4">
           <a 
-            href="https://www.instagram.com/dcasa.marmitaria/" 
+            href="#" /* subistituir pelo link do instagram */
             target="_blank" 
             rel="noopener noreferrer"
             className="p-1 rounded-lg cursor-pointer hover:opacity-95 transition-opacity"
