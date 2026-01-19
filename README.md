@@ -1,6 +1,6 @@
 # Pedidos Online - Next.js
 
-Sistema de pedidos online para marmitaria, migrado de Vite + React para Next.js com backend integrado.
+Sistema de pedidos online para restaurante, migrado de Vite + React para Next.js com backend integrado.
 
 ## Estrutura do Projeto
 
