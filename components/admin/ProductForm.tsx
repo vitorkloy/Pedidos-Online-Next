@@ -76,29 +76,23 @@ export function ProductForm({ product, onSubmit, onCancel }: ProductFormProps) {
     }
 
     setIsUploading(true);
-    let imageUrl = imagePreview; // Se estiver editando e não houver novo arquivo
+    let imageData = imagePreview; // Se estiver editando e não houver novo arquivo
 
-    // Se houver novo arquivo, fazer upload
+    // Se houver novo arquivo, converter para base64
     if (imageFile) {
       try {
-        const formData = new FormData();
-        formData.append("file", imageFile);
-
-        const response = await fetch("/api/upload", {
-          method: "POST",
-          body: formData,
+        const reader = new FileReader();
+        imageData = await new Promise<string>((resolve, reject) => {
+          reader.onloadend = () => {
+            const base64String = reader.result as string;
+            resolve(base64String);
+          };
+          reader.onerror = reject;
+          reader.readAsDataURL(imageFile);
         });
-
-        if (!response.ok) {
-          const error = await response.json();
-          throw new Error(error.error || "Erro ao fazer upload da imagem");
-        }
-
-        const data = await response.json();
-        imageUrl = data.url;
       } catch (error: any) {
-        console.error("Erro ao fazer upload:", error);
-        alert(error.message || "Erro ao fazer upload da imagem");
+        console.error("Erro ao processar imagem:", error);
+        alert("Erro ao processar a imagem");
         setIsUploading(false);
         return;
       }
@@ -108,7 +102,7 @@ export function ProductForm({ product, onSubmit, onCancel }: ProductFormProps) {
       name: name.trim(),
       description: description.trim(),
       price: parseFloat(price),
-      image: imageUrl,
+      image: imageData,
     });
 
     setName('');
