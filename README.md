@@ -89,6 +89,9 @@ npm start
 - **React Query** - Gerenciamento de estado do servidor
 - **Lucide React** - Ícones
 
+## Telas do Sistema
+![Interface do sistema](https://github.com/vitorkloy/farm-frontend/blob/main/public/signInPage.jpeg)
+
 ## Notas Importantes
 
 ### Autenticação
