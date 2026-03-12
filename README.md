@@ -90,7 +90,22 @@ npm start
 - **Lucide React** - Ícones
 
 ## Telas do Sistema
-![Interface do sistema](https://github.com/vitorkloy/Pedidos-Online-Next/tree/main/public/images/telas/inicial)
+### Inicial
+![Interface do sistema](https://github.com/vitorkloy/Pedidos-Online-Next/blob/main/public/images/telas/inicial.png)
+### Carrinho
+![Interface do sistema](https://github.com/vitorkloy/Pedidos-Online-Next/blob/main/public/images/telas/carrinho%20c%20compras.png)
+### Entrar
+![Interface do sistema](https://github.com/vitorkloy/Pedidos-Online-Next/blob/main/public/images/telas/entrar.png)
+### Cadastro
+![Interface do sistema](https://github.com/vitorkloy/Pedidos-Online-Next/blob/main/public/images/telas/cadastrar.png)
+### Painel
+![Interface do sistema](https://github.com/vitorkloy/Pedidos-Online-Next/blob/main/public/images/telas/painel.png)
+### Novo Produto
+![Interface do sistema](https://github.com/vitorkloy/Pedidos-Online-Next/blob/main/public/images/telas/novo%20produto.png)
+### Editar Produto
+![Interface do sistema](https://github.com/vitorkloy/Pedidos-Online-Next/blob/main/public/images/telas/editar%20produto.png)
+### Editar Conta
+![Interface do sistema](https://github.com/vitorkloy/Pedidos-Online-Next/blob/main/public/images/telas/editar%20conta.png)
 
 ## Notas Importantes
 
