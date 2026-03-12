@@ -90,7 +90,7 @@ npm start
 - **Lucide React** - Ícones
 
 ## Telas do Sistema
-![Interface do sistema](https://github.com/vitorkloy/farm-frontend/blob/main/public/signInPage.jpeg)
+![Interface do sistema](https://github.com/vitorkloy/Pedidos-Online-Next/tree/main/public/images/telas/inicial)
 
 ## Notas Importantes
 
